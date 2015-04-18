@@ -1,0 +1,53 @@
+#N canvas 786 105 388 316 10;
+#X text 15 46 Constructor Parameters:;
+#X obj 303 101 print;
+#X obj 355 100 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 180 102 5 0 0 0 - - -, f 5;
+#X obj 235 101 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 263 101;
+#X text 52 59 port: Default 40000;
+#X obj 308 178 print;
+#X obj 360 177 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 185 179 5 0 0 0 - - -, f 5;
+#X obj 240 178 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 268 178;
+#X obj 315 253 print;
+#X obj 367 252 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 192 254 5 0 0 0 - - -, f 5;
+#X obj 247 253 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 275 253;
+#X text 11 8 CAUTION!!!! \; Sometimes system crash deleting receiver
+when receiving data;
+#X obj 249 45 broadcastrecv 40000;
+#X obj 258 210 broadcastrecv 4000;
+#X obj 13 142 broadcastsend 40000;
+#X obj 13 110 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 254 122 broadcastrecv 40000;
+#X obj 14 166 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 14 198 broadcastsend 4000;
+#X text 203 294 Developed by flavio schiavoni;
+#X connect 18 0 1 0;
+#X connect 18 0 5 0;
+#X connect 18 0 3 0;
+#X connect 18 0 4 0;
+#X connect 18 0 2 0;
+#X connect 19 0 12 0;
+#X connect 19 0 16 0;
+#X connect 19 0 14 0;
+#X connect 19 0 15 0;
+#X connect 19 0 13 0;
+#X connect 21 0 20 0;
+#X connect 22 0 7 0;
+#X connect 22 0 11 0;
+#X connect 22 0 9 0;
+#X connect 22 0 10 0;
+#X connect 22 0 8 0;
+#X connect 23 0 24 0;
